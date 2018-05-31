@@ -9,10 +9,10 @@ p {
 	font-size: 17px;
 }
 h1{
-	text-align: center;
 	font-size: 50px;
 	background-color: #B1FF49;
 }
+
 h3 {
 	font-size: 22px;
 }
@@ -21,10 +21,13 @@ h4 {
 }
 ul {
     list-style-type: none;
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
-    overflow: hidden; 
-	background-color:#006920;
+    width: 8%;
+    background-color: #B1FF49;
+    height: 100%; 
+    position: fixed;
+    overflow: auto; 
 }
 li {
     float: left;
@@ -36,27 +39,58 @@ li a {
 	padding: 18px 22px;
     font-size: 21px;
     text-decoration: none;
+	width: 60px;
 }
-.grid {
-	display:grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-	grid gap:2vh;
-	border:1px black solid;
+li a:hover {
+    background-color: #B1FF49;
+    color: #F6F7FF;
 }
-.headerbody {
-	background-color: #006920;
-	padding: 2em;
-	grid-column-start: 1;
-	grid-column-end: span 5;
+
+.menu-body {
+  max-width: 680px;
+  margin: 0 auto;
+  display: block;
+  color: #F6F7FF;
 }
-.leftsidebar {
-	background-color: #B1FF49;
-	padding: 1em;
-	grid-column-start: 1;
-	grid-column-end: span 2;
+ 
+.menu-section {
+  margin-bottom: 80px;
 }
-	
-	
+ 
+.menu-section-title {
+  font-family: georgia;
+  font-size: 50px;
+  display: block;
+  font-weight:normal;
+  margin: 20px 0;
+  text-align: Center;
+}
+ 
+.menu-item {
+  margin: 35px 0;
+  font-size: 18px;
+}
+ 
+.menu-item-name{
+  font-family: helvetica;
+  font-weight: bold;
+  border-bottom: 2px dotted rgb(213, 213, 213);
+}
+ 
+.menu-item-description {
+  font-style: italic;
+  font-size: .9em;
+  line-height: 1.5em;
+}
+ 
+.menu-item-price{
+  float: right;
+  font-weight: bold;
+  font-family: arial;
+  margin-top: -22px;
+}
+
+
 	
 	
 	
