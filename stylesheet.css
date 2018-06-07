@@ -1,20 +1,52 @@
+div {
+.item1 { grid-area: header;}
+.grid container {
+	display: grid;
+	grid-template-areas:
+	'header header header header header header';
+	grid-gap: 0px;
+background-color: #B1FF49; }
+}
+.grid {
+display:grid;
+grid-template-columns:1fr 1fr 1fr 
+grid-gap:2vh;
+border: 1px black solid;
+}
+.headerbody {
+background-color:#006920;
+padding;1em;
+grid-column-start: 1;
+grid-column-end: span 3;
+text- align:justify;
+}  
+.column {
+    float: left;
+    width: 33.33%;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
 body {
 	font-family: Georgia, Garamond;
-	font-size:17px;
+	font-size: 20px;
 	background-color:#006920;
 }
 
 p {
 	font-family: Georgia, Garamond;
-	font-size: 17px;
+	font-size: 20px;
+	background-color: #F6F7FF;
 }
 h1{
-	font-size: 50px;
+	font-size: 55px;
 	background-color: #B1FF49;
-}
-
+}	
 h3 {
-	font-size: 22px;
+	font-size: 68px;
+	background-color: #B1FF49;
 }
 h4 {
 	font-size: 20px;
@@ -45,6 +77,39 @@ li a:hover {
     background-color: #B1FF49;
     color: #F6F7FF;
 }
+div.a {
+    text-align: left
+	font-size: 55px;
+}
+div.b {
+    text-align: center;
+	font-size: 75px;
+	color: red;
+}
+div.c {
+    text-align: right;
+	font-size: 55px;
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .menu-body {
   max-width: 680px;
@@ -52,11 +117,9 @@ li a:hover {
   display: block;
   color: #F6F7FF;
 }
- 
 .menu-section {
   margin-bottom: 80px;
 }
- 
 .menu-section-title {
   font-family: georgia;
   font-size: 50px;
@@ -65,24 +128,20 @@ li a:hover {
   margin: 20px 0;
   text-align: Center;
 }
- 
 .menu-item {
   margin: 35px 0;
   font-size: 18px;
 }
- 
 .menu-item-name{
   font-family: helvetica;
   font-weight: bold;
   border-bottom: 2px dotted rgb(213, 213, 213);
 }
- 
 .menu-item-description {
   font-style: italic;
   font-size: .9em;
   line-height: 1.5em;
 }
- 
 .menu-item-price{
   float: right;
   font-weight: bold;
@@ -91,13 +150,10 @@ li a:hover {
 }
 
 
-	
-	
-	
-	
-	
-	
-	
+
+
+
+
 	
 	
 	
