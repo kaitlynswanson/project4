@@ -9,15 +9,22 @@ background-color: #B1FF49; }
 }
 .grid {
 display:grid;
-grid-template-columns:1fr 1fr 1fr 
-grid-gap:2vh;
+grid-template-columns:1fr 1fr 1fr 1fr; 
 border: 1px black solid;
 }
+
+.grid-2 {
+padding: 1em;
+grid-column-start: 1;
+grid-column-end: span 4;
+text-align: center;
+}
+
 .headerbody {
 background-color:#006920;
 padding;1em;
 grid-column-start: 1;
-grid-column-end: span 3;
+grid-column-end: span 4;
 text- align:justify;
 }  
 .column {
@@ -29,6 +36,7 @@ text- align:justify;
     display: table;
     clear: both;
 }
+
 body {
 	font-family: Georgia, Garamond;
 	font-size: 20px;
@@ -147,12 +155,15 @@ div.c {
   font-weight: bold;
   font-family: arial;
   margin-top: -22px;
+  padding:1em;
+	grid-column-start: span 1;
+	grid-column-end: 1;
 }
-
-
-
-
-
+.main{
+	padding:1em;
+	grid-column-start: span 1;
+	grid-column-end: 1;
+}
 
 	
 	
